@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducing Cove](README.md)
+* [🌊 Introducing Cove](README.md)
 * [Protocol Concepts](protocol-concepts.md)
 * [Storm Labs](storm-labs.md)
 * [Official Links](official-links.md)
