@@ -4,7 +4,7 @@
 
 ### What is Cove?
 
-Cove is the first ERC-4626 yield optimizer with automated and customizable vault management. Earn the best yields on-chain without the hassle of managing a portfolio. Cove is built with the [Yearn](https://yearn.fi/) ecosystem in mind , and is optimized by [Gauntlet](https://www.gauntlet.xyz/).
+Cove is the first ERC-4626 yield optimizer with automated and customizable vault management. Earn the best yields on-chain without the hassle of managing a portfolio. Cove is built with the [Yearn](https://yearn.fi/) ecosystem in mind and is optimized by [Gauntlet](https://www.gauntlet.xyz/).
 
 ### How does it work?
 
