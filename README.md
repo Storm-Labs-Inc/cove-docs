@@ -32,7 +32,7 @@ Users can customize their portfolios by choosing different allocation strategies
 
 Traditional AMMs are not well suited for portfolio or index construction because they suffer from [loss-versus-rebalancing (LVR)](https://a16zcrypto.com/posts/article/lvr-quantifying-the-cost-of-providing-liquidity-to-automated-market-makers/). This is because of [toxic order flow](https://insights.deribit.com/market-research/toxic-flow-its-sources-and-counter-strategies/): all trades execute at worse-than-market prices.
 
-Cove proposes an alternative solution that eliminates LVR and guarantees general intent level execution as a lower bound (e.g. CoW Swap). Internal trades avoid slippage, MEV, price impact, and external trading fees. If trades need to occur outside of Cove, they go through CoW Swap still avoiding MEV and capturing positive slippage.
+Cove proposes an innovative new approach that eliminates LVR and guarantees general intent level execution as a lower bound (e.g. CoW Swap). Internal trades avoid slippage, MEV, price impact, and external trading fees. External trades route through CoW Swap which also protects from MEV and captures positive slippage.
 
 **Key Differentiators**
 
