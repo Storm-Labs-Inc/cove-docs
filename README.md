@@ -12,9 +12,11 @@ Cove acts as an intent aggregator for liquidity providers (LPs). Users can open 
 
 1. Select a base asset, either ETH or USD.
 2. Choose an allocation strategy, which specifies how capital will deploy.
-3. Determine which ERC-4626 tokens to include. Possible combinations include yDAI/sDAI/sFRAX or stETH/sfrxETH/yETH.
+   * Planned options include maximum yield (powered by Gauntlet), market cap weighted (enabling custom indexes), or custom weights.
+3. Determine which ERC-20/4626 tokens to include.
+   * Potential tokens include stablecoins (sDAI, sFRAX, yDAI),  liquid staking tokens (LSTs - stETH, sfrxETH, yETH), or liquid restaking tokens (LRTs).
 
-The protocol aggregates and manages deposits according to user preferences. When rebalancing positions, baskets may have a [coincidence of wants](https://en.wikipedia.org/wiki/Coincidence\_of\_wants) (CoW) like ring trades in [CoW Swap’s batch auctions](https://docs.cow.fi/overview/coincidence-of-wants).
+The protocol aggregates and manages deposits according to user preferences and rebalances periodically. When rebalancing positions, baskets may have a [coincidence of wants](https://en.wikipedia.org/wiki/Coincidence\_of\_wants) (CoW) like ring trades in [CoW Swap’s batch auctions](https://docs.cow.fi/overview/coincidence-of-wants).
 
 Cove maximizes the volume of CoWs using linear programming. This is done by considering the current/target protocol level allocations off-chain. When there are matches, trades occur without losing value from price impact, slippage, fees, or MEV. Any external trades are routed through CoW Swap (which now supports programmatic orders including TWAP via their [Programmatic Order Framework](https://blog.cow.fi/introducing-the-programmatic-order-framework-from-cow-protocol-088a14cb0375)) to ensure the best execution and capture positive slippage.
 
